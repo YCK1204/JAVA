@@ -1,8 +1,23 @@
+# 문자 포함 여부
 "Hello" in a    <<  a.contains("Hello")
+
+# 인덱스
+a.indexOf()
+indexOf(String s)
+indexOf(int i)
+indexOf(String s, int startindex)
+indexOf(int i, int startindex)
+
+a.lastIndexOf()
+
+lastIndexOf(String s)
+lastIndexOf(int i)
+lastIndexOf(String s, int startindex)
+lastIndexOf(int i, int startindex)
 
 # 문자열 비교시 equals or equalsIgnoreCase
 
-input() >> Scanner a = new Scanner(System.in)
+
 
 File a = new File("파일명")
 try{
@@ -15,10 +30,6 @@ catch(FileNotFoundException e){
 	}
 	
 hasNextInt << 파일에서 입력 받아온 자료형이 정수형인 경우 true 아닌경우 false
-
-# 삼항 연산자
-(a > b) ? true : false
-
 
 # 추상 클래스 
 외부 클래스의 public < 부분을 abstract로 바꾼다.
