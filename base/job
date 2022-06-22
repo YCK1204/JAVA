@@ -58,3 +58,8 @@ public class Main implements play{
 		}
 	}
 }
+
+
+# 변수 타입 확인
+getClass().getName() 
+System.out.println(list.getClass().getName());
