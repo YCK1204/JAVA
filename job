@@ -20,3 +20,41 @@ hasNextInt << 파일에서 입력 받아온 자료형이 정수형인 경우 tru
 (a > b) ? true : false
 
 
+# 추상 클래스 
+외부 클래스의 public < 부분을 abstract로 바꾼다.
+abstract class play{
+	abstract void player();
+}
+public class Main extends play{
+	public static void main(String[] args){
+		Main main = new Main();
+		main.player();
+
+		void player{
+			System.out.print("hello");
+		}		
+	}	
+}
+
+
+# 인터 페이스
+추상 클래스와 비슷한 느낌
+public interface play{
+	abstract void player();
+	public void player();
+
+}
+public class Main implements play{
+	public static void(String[] args){
+		Main main = new Main();
+		main.player();
+		main.player2();
+
+		public void player{
+			실행문
+		}
+		public void player2{
+			실행문
+		}
+	}
+}
