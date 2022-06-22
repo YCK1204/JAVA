@@ -1,1 +1,6 @@
-# JAVA
+# 문자열 슬라이싱
+String a = "Hello World";
+a.substring(시작값)
+a.substring(시작값, 끝값)
+System.out.print(a.substring(6)); # 6부터 출력 " World"
+
