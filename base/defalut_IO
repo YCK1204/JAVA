@@ -1,0 +1,29 @@
+# 기본 입출력
+Scanner와 print종류
+
+# 빠른 입출력
+import java.io.BuffereaReader;
+import java.io.InputStreamReader;
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.io.IOException;
+
+public class Main{
+  public static void main(String[] args) throws IOBuffereaReader{  #  예외 처리(try catch문을 사용해도 되지만 대게적 이렇게 사용)
+        BuffereaReader br = new BuffereaReader(new InputStreamReader(System.in)); # 입력
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); #출력
+        
+        # BufferedWriter는 Enter만 경계로 인식
+        # String으로 고정
+        
+        # 출력문
+        bw.write(변수);
+        # 필수항목(밑 두개는 종료 시 끼워줘야함)
+        
+        bw.flush();
+    	  bw.close();
+  
+  
+  
+  }
+} 
