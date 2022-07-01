@@ -8,10 +8,13 @@ import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
 
+import java.util.StringTokenizer; # BufferedReader로 입력 받으면 줄바꿈을 통해서만 입력 받아야 하는데 이걸 쓰면 해결 가능
+
 public class Main{
   public static void main(String[] args) throws IOException{  #  예외 처리(try catch문을 사용해도 되지만 대게적 이렇게 사용)
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); # 입력
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); #출력
+        StringTokenizer st;
         
         # BufferedWriter는 Enter만 경계로 인식
         # String으로 고정
@@ -20,9 +23,11 @@ public class Main{
         bw.write(변수);
         # 필수항목(밑 두개는 종료 시 끼워줘야함)
         
+        
+        bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n"); # 두 개의 int형 변수 " " 띄어쓰기로 받아서 출력
         bw.flush();
     	  bw.close();
-  
+        
   
   
   }
