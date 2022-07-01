@@ -9,7 +9,7 @@ import java.io.OutputStreamWriter;
 import java.io.IOException;
 
 public class Main{
-  public static void main(String[] args) throws IOBuffereaReader{  #  예외 처리(try catch문을 사용해도 되지만 대게적 이렇게 사용)
+  public static void main(String[] args) throws IOException{  #  예외 처리(try catch문을 사용해도 되지만 대게적 이렇게 사용)
         BuffereaReader br = new BuffereaReader(new InputStreamReader(System.in)); # 입력
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); #출력
         
