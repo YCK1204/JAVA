@@ -1,0 +1,8 @@
+# 인덱스 찾기
+import java.util.Arrays;
+
+public class IndexOfTest {
+    public static void main(String[] args) {
+		String[] arr = {"a","b","c"};
+		System.out.println(Arrays.asList(arr).indexOf("b")); //1이 출력된다.
+}
